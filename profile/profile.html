@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<style>
+body {
+	background-image: url(bg.jpg);
+	background-repeat: repeat;
+}
+h1 {
+	 text-align:center;
+	 color:white;
+}
+table{
+	 position: absolute;
+	 left: 0px;
+}
+#header{
+	padding:5px;
+	background-color:white;
+	border:2px solid black;
+}
+#section{
+	padding:5px;
+	background-color:grey;
+	height:500px;
+	width:900px;
+	border:2px solid black;
+	float:left;
+	color:white;
+}
+#footer{
+	padding:4px;
+	background-color:#EBEB00;
+	border:2px solid black;
+	text-margin:0px auto;
+	clear:both;
+}
+#nav{
+	background-color:red;
+	border:2px solid black;
+}
+#aside{
+	height:1200px;
+	width:200px;
+	float:left;
+	clear:both;
+	background: rgba(40%,0%,0%,0); 
+}
+</style>
+<head>
+<script>
+function showtime()
+{
+today = new Date()
+document.CLOCK.ALARM.value = today.toLocaleString()
+TimerID = setTimeout ("showtime()",1000)
+}
+</script>
+<title>
+PersonalFile
+</title>
+<h1>自我介紹</h1>
+</head>
+<body>
+<form NAME="CLOCK">
+<font COLOR="Green"><p>現在時刻：</font><input NAME="ALARM" TYPE="TEXT" SIZE="40x"> </p>
+</form>
+<nav id="nav">
+導覽列
+</nav>
+<header id="header">
+welcome!
+</header>
+<aside id="aside">
+<img src="ivan.jpg" alt="林城億" style="width:240px;height:320px;">
+</aside>
+<section id="section">
+姓名:林城億<br/>
+血型:A<br/>
+e-mail:ivanlin1995@gmail.com<br/>
+臉書:林城億<br/>
+感情狀態:單身<br/>
+</section>
+<footer id="footer">
+連絡電話:0933331625 &nbsp 地址:高雄市鳥松鄉大仁南路
+</footer>
+
+<p></p>
+</body>
+<body onLoad="showtime()">
